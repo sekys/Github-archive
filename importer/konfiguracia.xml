@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<constants>
+    <!-- database connection -->
+    <dbInfo>
+        <entry>
+            <key>javax.persistence.jdbc.url</key>
+            <value>jdbc:oracle:thin:@localhost:1521:ORCL</value>
+        </entry>
+        <entry>
+            <key>javax.persistence.jdbc.password</key>
+            <value>pdt</value>
+        </entry>
+        <entry>
+            <key>javax.persistence.jdbc.driver</key>
+            <value>oracle.jdbc.OracleDriver</value>
+        </entry>
+        <entry>
+            <key>javax.persistence.jdbc.user</key>
+            <value>pdt</value>
+        </entry>
+        <entry>
+            <key>eclipselink.cache.shared.default</key>
+            <value>false</value>
+        </entry>
+        <entry>
+            <key>eclipselink.jdbc.read-connections.min</key>
+            <value>2</value>
+        </entry>
+        <entry>
+            <key>eclipselink.jdbc.write-connections.max</key>
+            <value>20</value>
+        </entry>
+        <entry>
+            <key>eclipselink.ddl-generation</key>
+            <value>none</value>
+        </entry>
+        <entry>
+            <key>eclipselink.jdbc.read-connections.shared</key>
+            <value>false</value>
+        </entry>
+        <entry>
+            <key>eclipselink.jdbc.write-connections.min</key>
+            <value>0</value>
+        </entry>
+        <entry>
+            <key>eclipselink.jdbc.read-connections.max</key>
+            <value>20</value>
+        </entry>
+
+    </dbInfo>
+</constants>

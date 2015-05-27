@@ -1,0 +1,15 @@
+
+ create tablespace MYSQL_DATA
+     datafile 'mysql_02.dbf' size 150M
+     extent management local autoallocate segment space management auto;
+
+create user mysql identified by "mysql" default tablespace MYSQL_DATA;
+
+GRANT CONNECT, RESOURCE, CREATE VIEW, CREATE PUBLIC SYNONYM TO
+pdt WITH ADMIN OPTION;
+
+GRANT ALTER ANY ROLE, ALTER ANY SEQUENCE, ALTER ANY TABLE, ALTER TABLESPACE,ALTER ANY TRIGGER, COMMENT ANY TABLE, CREATE ANY SEQUENCE, CREATE ANY TABLE,CREATE ANY TRIGGER, CREATE ROLE, CREATE TABLESPACE, CREATE USER, DROP ANY SEQUENCE, DROP ANY TABLE, DROP ANY TRIGGER, DROP TABLESPACE, DROP USER, DROP ANY ROLE, GRANT ANY ROLE, INSERT ANY TABLE, SELECT ANY TABLE, UPDATE ANY TABLE TO pdt;
+
+drop user pdt cascade
+
+alter database datafile '<full_file_name>' resize <size>M;
